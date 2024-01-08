@@ -1,0 +1,88 @@
+.navbar-custom{
+    background-color: #fff;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 23px;
+    padding: 0% 20% 0% 20%;
+    
+}
+.navbar-title{
+    font-family: "Montserrat", Arial, sans-serif;
+
+}
+.social-media p a :hover{
+    opacity: 0.7; /* Opacidad al pasar el cursor */
+
+}
+
+.social-media p a {
+    color: #000;
+    width: 40px;
+    height: 40px;
+    margin-right: 1px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+
+.social{
+    background-color: #8c52ff;
+}
+
+.dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.dropdown-menu.show {
+    max-height: 200px; /* Ajusta la altura máxima según sea necesario */
+}
+
+#options{
+    padding: 15px; /* Ajusta el valor según sea necesario */
+    border: 0.1vw solid #000;
+    border-radius: 1vw;
+    background-color: #6137bb;
+
+}
+
+#singup{
+    background-color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.3s ease;
+    border-radius: 0.5vw;
+    border: 0.2vw solid #000;
+    text-align: center;
+}
+
+#singup:hover{
+    background-color: #8c52ff;    
+}
+
+#register{
+    background-color: #fff;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.3s ease;
+    border-radius: 0.5vw;
+    border: 0.2vw solid #000;   
+}
+
+#register:hover{
+    background-color: #8c52ff;    
+}
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para pantallas medianas (por ejemplo, tablets) */
+  }
+  
+  @media screen and (min-width: 1025px) {
+    /* Estilos para pantallas grandes (por ejemplo, computadoras de escritorio) */
+  }
