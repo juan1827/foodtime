@@ -1,0 +1,47 @@
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col-12">
+      <div class="publications">
+        <form #postForm="ngForm" (ngSubmit)="createPost(postForm)">
+          <div class="titulo"><h1>¡Crea una publicación!</h1></div>
+          <div class="form-floating texto">
+            <h2>Titulo</h2>
+            <label for="title"></label>
+            <input type="text" name="title" class="form-control" placeholder="Titulo de tu publicación" id="title" style="margin: 4%; height: 25px; width: 90%; border-radius:0.5vw; border:0.2vw solid" rows="4" ngModel required>
+          </div>
+          <div class="form-floating texto">
+            <h2>Contenido</h2>
+            <label for="content"></label>
+            <textarea name="content" class="form-control" placeholder="¡Deja un comentario aqui!" id="content" style="margin: 4%; height: 60px; width: 90%; border-radius:0.5vw; border:0.2vw solid" rows="4" ngModel required></textarea>
+          </div>
+          <div class="form-floating texto">
+            <h2>Imagen</h2>
+            <br>
+            <label for="image">(Opcional):</label>
+            
+            <input type="file" name="image" id="image" accept="image/*" (change)="onFileSelected($event)">
+            <img *ngIf="selectedFile" [src]="selectedFileUrl" alt="Selected Image Preview" width="200">
+          </div>
+          <div class="boton">  
+            <button type="submit" [disabled]="postForm.invalid">Subir publicación</button>
+          </div>         
+        </form>
+      </div>
+      <br>
+      <div *ngIf="(posts$ | async) as posts; else loading">
+        <div class="public2">
+          <div *ngFor="let post of posts">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+            <p>Fecha de Publicación: {{ post.fechaPublicacion }}</p> <!-- Mostrar la fecha -->
+            <p>Usuario: {{ post.username }}</p> <!-- Mostrar el nombre de usuario -->
+            <img *ngIf="post.imageUrl" [src]="post.imageUrl" alt="Post Image">
+            <div class="imagen"><img *ngIf="post.imageUrl" style="margin:2vw" [src]="post.imageUrl" alt="Post Image"></div>
+          </div>
+        </div>  
+      </div>
+    </div>   
+  </div>    
+</div>
+  <ng-template #loading>Loading posts...</ng-template>

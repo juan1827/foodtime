@@ -1,0 +1,36 @@
+<form (ngSubmit)="register()">
+  <div class="section">
+    <div class="container">
+      <div class="row full-height justify-content-center">
+        <div class="align-self-top">
+          <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <div class="card-3d-wrap mx-auto">
+              <div class="card-3d-wrapper">
+                <div class="card-front">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-4 pb-3">Registrarse</h4>
+                      <div class="form-group mt-3">
+                        <input type="text" class="form-style" [ngModel]="username" (ngModelChange)="username = $event" placeholder="Nombre de usuario" required>
+                      </div>
+                      <div class="form-group mt-3">
+                        <input type="email" class="form-style" [ngModel]="email" (ngModelChange)="email = $event" placeholder="Email" required>
+                      </div> 
+                      <div class="form-group mt-3">
+                        <input type="password" class="form-style" [ngModel]="password1" (ngModelChange)="password1 = $event" placeholder="Contraseña" required>
+                      </div>
+                      <div class="form-group mt-3">
+                        <input type="password" class="form-style" [ngModel]="password2" (ngModelChange)="password2 = $event" placeholder="Confirmar Contraseña" required>
+                      </div>
+                      <button type="submit" class="btn mt-4">Registrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

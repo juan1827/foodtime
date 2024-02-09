@@ -1,0 +1,67 @@
+<div class="container">
+        <div class="row info">
+        <form (ngSubmit)="updateProfile()">
+            <!-- Información básica del usuario -->
+            <h2>Perfil de usuario</h2>
+        
+            <div>
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" [(ngModel)]="profile.name">
+            <h1>{{profile.name}}</h1>
+
+            </div>
+        
+            <div>
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" [(ngModel)]="profile.username">
+            <h1>{{profile.username}}</h1>
+            </div>
+        
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" [(ngModel)]="profile.email">
+                <h1>{{profile.email}}</h1>
+
+            </div>
+
+            <div>
+                <label for="birthdate">Fecha de nacimiento:</label>
+                <input type="text" id="birthdate" [(ngModel)]="profile.birthdate">
+                <h1>{{profile.birthdate}}</h1>
+
+            </div>
+
+            <div>
+                <label for="city">Ciudad:</label>
+                <input type="text" id="city" [(ngModel)]="profile.city">
+                <h1>{{profile.city}}</h1>
+
+            </div>
+
+            <div>
+                <label for="phone">Número Telefónico:</label>
+                <input type="text" id="phone" [(ngModel)]="profile.phone">
+                <h1>{{profile.phone}}</h1>
+
+            </div>
+
+            <div>
+                <label for="description">Descripción:</label>
+                <textarea type="text" id="description" [(ngModel)]="profile.description"></textarea>
+                <h1>{{profile.description}}</h1>
+
+            </div>
+
+            <div>
+                <label for="animal">Preferencias Animales:</label>
+                <input type="text" id="animal" [(ngModel)]="profile.animal">
+                <h1>{{profile.animal}}</h1>
+
+            </div>
+            <!--Otros campos de perfil -->
+        
+            <button type="submit">Guardar cambios</button>
+        </form>
+
+    </div>
+</div>

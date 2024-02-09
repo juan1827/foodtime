@@ -1,0 +1,47 @@
+.tit h2{
+    margin: 0%;
+    padding-left: 5%;
+    color: #fff;
+    font-size: 4.0vw;
+    background-color:rgba(140, 82, 255, 0.7);
+    width: 1220px;
+    height: 20%;
+}
+  
+.medio{
+    padding: 35px 20px; 
+    background-color: #8c52ff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5vw;
+}
+
+#cartas h3{
+    font-size: 2.5vw;
+}
+
+#cartas p{
+    font-size: auto;
+}
+
+#cartas{
+    background-color: #8c52ff;
+    color: #edeced; 
+    border: 0.3vw solid #000;
+    border-radius: 3vw;
+}
+
+#cartas:hover{
+    background-color: #ffffff;
+    color: #000;
+    border: 0.4vw solid #8c52ff;
+    #bordes:hover{
+        background-color: #8c52ff;    
+        color: #fff;
+        border: 0.3vw solid #000;
+
+    }
+}

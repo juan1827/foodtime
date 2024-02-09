@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+*{
+    box-sizing: border-box;
+}
+#shadow-root .shadow
+
+
+
+.rectangulo {
+    width: 250px; 
+    height: 100px; 
+    border: 3px solid #fff;
+    background: #fff;
+}
+:host{
+    display: block;
+    --dile-massage-background-color: #fff,
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	line-height: 1.7;
+	color: #fff;
+	background-color: #fff;
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #5156ff 0,30%, #eee6ff 100%);
+}
+
+a:hover {
+	text-decoration: none;
+}
+.link {
+  color: #fff;
+}
+.link:hover {
+  color: #eee6ff;
+}
+p {
+  font-weight: 500;
+  font-size: 14px;
+}
+h4 {
+  font-size: 45px;
+  font-weight: 600;
+}
+h6 span{
+  padding: 0 20px;
+  font-weight: 700;
+}
+.section{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-height{
+  min-height: 80vh;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+display: none;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 60px;
+  height: 16px;
+  border-radius: 8px;
+  padding: 0;
+  margin: 10px auto;
+  cursor: pointer;
+  background-color: #eee6ff;
+}
+.checkbox:checked + label:before,
+.checkbox:not(:checked) + label:before{
+  position: absolute;
+  width: 36px;
+  display: block;
+  height: 36px;
+  border-radius: 50%;
+  color: #020202;
+  background-color: #5156ff;
+  font-family: 'unicons';
+  content: '\eb4f';
+  z-index: 20;
+  top: -10px;
+  left: -10px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+.checkbox:checked + label:before {
+  transform: translateX(44px) rotate(-270deg);
+}
+.card-3d-wrap {
+  position: relative;
+  width: 450px;
+  max-width: 100%;
+  height: 450px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  margin-top: 60px;
+}
+.card-3d-wrapper {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 600ms ease-out; 
+}
+.card-front, .card-back {
+  width: 120%;
+  height: 130%;
+  background-color: #7b68ee;
+  background-image: url('/img/pattern_japanese-pattern-2_1_2_0-0_0_1__ffffff00_000000.png');
+  position: absolute;
+  border-radius: 20px;
+  border: 0.3vw solid #000;
+
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+}
+.center-wrap{
+  position: absolute;
+  width: 100%;
+  padding: 0 35px;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 35px) perspective(100px);
+  z-index: 20;
+  display: block;
+}
+
+.form-style {
+  padding: 13px 20px;
+  padding-left: 55px;
+  height: 60px;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  outline: none;
+  color: #eee6ff;
+  background-color: #1f2029;
+  border: none;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+.form-style:focus,
+.form-style:active {
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+.input-icon {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: left;
+  -webkit-transition: all 200ms linear;
+   transition: all 200ms linear;
+}
+.btn{  
+  text-align: center;
+  border-radius: 5px;
+  height: 80px;
+  width: 160px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition : all 200ms linear;
+  transition: all 200ms linear;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  align-items: center;
+  background-color: #5156ff;
+  color: #fff;
+  border: bold;
+}
+.btn:hover{  
+  background-color: #eee6ff;
+  color: #5156ff;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
